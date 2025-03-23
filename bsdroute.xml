@@ -1,0 +1,63 @@
+<routes>
+    <vType id="passenger" accel="2.6" decel="4.5" sigma="0.5" maxSpeed="20" length="4"/>
+    <vType id="iot_car" accel="3.0" decel="5.0" sigma="0.3" maxSpeed="25" length="4.5"/>
+    
+    <route id="route_north_south" edges="754598165#2 757092064#1" />
+    <route id="route_east_west" edges="749662140#0 978400303#0" />
+    <route id="route_south_north" edges="1053267667#3 749988360#0" />
+    <route id="route_west_east" edges="885403818#2 563175146#1" />
+    <route id="route_north_east" edges="754598165#2 563175146#1" />
+    <route id="route_south_west" edges="1053267667#3 978400303#0" />
+
+    <vehicle id="veh0" type="passenger" route="route_north_south" depart="1"/>
+    <vehicle id="veh1" type="passenger" route="route_east_west" depart="5"/>
+    <vehicle id="veh2" type="iot_car" route="route_south_north" depart="10"/>
+    <vehicle id="veh3" type="passenger" route="route_west_east" depart="15"/>
+    <vehicle id="veh4" type="passenger" route="route_north_east" depart="20"/>
+    <vehicle id="veh5" type="iot_car" route="route_south_west" depart="25"/>
+    <vehicle id="veh6" type="passenger" route="route_north_south" depart="30"/>
+    <vehicle id="veh7" type="passenger" route="route_east_west" depart="35"/>
+    <vehicle id="veh8" type="iot_car" route="route_south_north" depart="40"/>
+    <vehicle id="veh9" type="passenger" route="route_west_east" depart="45"/>
+    <vehicle id="veh10" type="passenger" route="route_north_east" depart="50"/>
+    <vehicle id="veh11" type="iot_car" route="route_south_west" depart="55"/>
+    <vehicle id="veh12" type="passenger" route="route_north_south" depart="60"/>
+    <vehicle id="veh13" type="passenger" route="route_east_west" depart="65"/>
+    <vehicle id="veh14" type="iot_car" route="route_south_north" depart="70"/>
+    <vehicle id="veh15" type="passenger" route="route_west_east" depart="75"/>
+    <vehicle id="veh16" type="passenger" route="route_north_east" depart="80"/>
+    <vehicle id="veh17" type="iot_car" route="route_south_west" depart="85"/>
+    <vehicle id="veh18" type="passenger" route="route_north_south" depart="90"/>
+    <vehicle id="veh19" type="passenger" route="route_east_west" depart="95"/>
+    <vehicle id="veh20" type="iot_car" route="route_south_north" depart="100"/>
+    <vehicle id="veh21" type="passenger" route="route_west_east" depart="105"/>
+    <vehicle id="veh22" type="passenger" route="route_north_east" depart="110"/>
+    <vehicle id="veh23" type="iot_car" route="route_south_west" depart="115"/>
+    <vehicle id="veh24" type="passenger" route="route_north_south" depart="120"/>
+    <vehicle id="veh25" type="passenger" route="route_east_west" depart="125"/>
+    <vehicle id="veh26" type="iot_car" route="route_south_north" depart="130"/>
+    <vehicle id="veh27" type="passenger" route="route_west_east" depart="135"/>
+    <vehicle id="veh28" type="passenger" route="route_north_east" depart="140"/>
+    <vehicle id="veh29" type="iot_car" route="route_south_west" depart="145"/>
+    <vehicle id="veh30" type="passenger" route="route_north_south" depart="150"/>
+    <vehicle id="veh31" type="passenger" route="route_east_west" depart="155"/>
+    <vehicle id="veh32" type="iot_car" route="route_south_north" depart="160"/>
+    <vehicle id="veh33" type="passenger" route="route_west_east" depart="165"/>
+    <vehicle id="veh34" type="passenger" route="route_north_east" depart="170"/>
+    <vehicle id="veh35" type="iot_car" route="route_south_west" depart="175"/>
+    <vehicle id="veh36" type="passenger" route="route_north_south" depart="180"/>
+    <vehicle id="veh37" type="passenger" route="route_east_west" depart="185"/>
+    <vehicle id="veh38" type="iot_car" route="route_south_north" depart="190"/>
+    <vehicle id="veh39" type="passenger" route="route_west_east" depart="195"/>
+    <vehicle id="veh40" type="passenger" route="route_north_east" depart="200"/>
+    <vehicle id="veh41" type="iot_car" route="route_south_west" depart="205"/>
+    <vehicle id="veh42" type="passenger" route="route_north_south" depart="210"/>
+    <vehicle id="veh43" type="passenger" route="route_east_west" depart="215"/>
+    <vehicle id="veh44" type="iot_car" route="route_south_north" depart="220"/>
+    <vehicle id="veh45" type="passenger" route="route_west_east" depart="225"/>
+    <vehicle id="veh46" type="passenger" route="route_north_east" depart="230"/>
+    <vehicle id="veh47" type="iot_car" route="route_south_west" depart="235"/>
+    <vehicle id="veh48" type="passenger" route="route_north_south" depart="240"/>
+    <vehicle id="veh49" type="passenger" route="route_east_west" depart="245"/>
+    <vehicle id="veh50" type="iot_car" route="route_south_north" depart="250"/>
+</routes>
