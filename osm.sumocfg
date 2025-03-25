@@ -6,7 +6,7 @@
 
     <input>
         <net-file value="osm.net.xml.gz"/>
-        <route-files value="bsdroute.xml"/>
+        <route-files value="bsdroute.rou.xml"/>
         <additional-files value="osm.poly.xml.gz"/>
     </input>
 
