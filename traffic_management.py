@@ -6,7 +6,6 @@ from sumolib import net
 import pandas as pd
 import xml.etree.ElementTree as ET
 
-# SUMO Configuration
 try:
     if 'SUMO_HOME' in os.environ:
         tools = os.path.join(os.environ['SUMO_HOME'], 'tools')
@@ -21,7 +20,6 @@ sumo_binary = checkBinary('sumo-gui')
 sumo_config = "osm.sumocfg"
 route = "bsdroute.rou.xml"
 net_file = "osm.net.xml"
-
 
 traffic_light_id = 'joinedS_6421159832_cluster_3639980474_3640024452_3640024453_6421159827_#4more_cluster_6421159831_7129012339'
 congestion_threshold = 5
