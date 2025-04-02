@@ -207,13 +207,6 @@ def run_simulation():
         print("Simulation finished.")
 
 def analyze_tripinfo(tripinfo_file_path):
-    print(f"\n--- Analyzing Trip Info ({tripinfo_file_path}) ---")
-    if not os.path.exists(tripinfo_file_path):
-        print(f"Error: Tripinfo file '{tripinfo_file_path}' not found. Cannot analyze results.")
-        return
-    if os.path.getsize(tripinfo_file_path) == 0:
-        print(f"Error: Tripinfo file '{tripinfo_file_path}' is empty.")
-        return
     try:
         tree = ET.parse(tripinfo_file_path)
         root = tree.getroot()
@@ -236,16 +229,15 @@ def analyze_tripinfo(tripinfo_file_path):
                 missing_attrs +=1
                 continue
         if missing_attrs > 0:
-             print(f"Warning: Skipped {missing_attrs} trips due to missing or invalid attributes in tripinfo file.")
+             print(f"Skipped {missing_attrs} trips due to missing or invalid attributes in tripinfo file.")
         if not data:
             print("No valid trip data found in the file.")
             return
         df = pd.DataFrame(data)
         completed_trips = df[df['arrival'] > 0]
         if not completed_trips.empty:
-            print(f"Total Trips Recorded: {len(df)}")
-            print(f"Completed Trips Analysed: {len(completed_trips)}")
-            print("\nStatistics for Completed Trips:")
+            print(f"Total Trips: {len(df)}")
+            print(f"Completed Trips: {len(completed_trips)}")
             print(f"  Average Duration:     {completed_trips['duration'].mean():.2f} s")
             print(f"  Average Waiting Time: {completed_trips['waitingTime'].mean():.2f} s")
             print(f"  Average Time Loss:    {completed_trips['timeLoss'].mean():.2f} s")
